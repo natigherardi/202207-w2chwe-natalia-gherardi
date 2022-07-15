@@ -9,5 +9,9 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
   },
-  rules: {},
+  rules: {
+    babel: {
+      env: { test: { plugins: ["@babel/plugin-transform-modules-commonjs"] } },
+    },
+  },
 };
