@@ -10,8 +10,10 @@ module.exports = {
     ecmaVersion: "latest",
   },
   rules: {
-    babel: {
-      env: { test: { plugins: ["@babel/plugin-transform-modules-commonjs"] } },
-    },
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { exceptAfterSingleLine: true },
+    ],
   },
 };
