@@ -1,5 +1,5 @@
 class Cell {
-  willDie;
+  willDie = false;
   isAlive;
 
   constructor(isAlive = false) {
