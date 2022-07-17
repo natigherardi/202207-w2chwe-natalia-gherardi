@@ -35,6 +35,8 @@ const evaluateCell = (board) => {
   board.boxes.forEach((row, rowIndex) => {
     row.forEach((elementOfRow, columnIndex) => {
       const aliveNeighbours = evaluateNeighburs(rowIndex, columnIndex, board);
+      return aliveNeighbours;
     });
   });
 };
+evaluateCell(board);
